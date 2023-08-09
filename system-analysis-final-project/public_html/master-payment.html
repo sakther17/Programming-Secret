@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="css/styles-master.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <nav class="navbar">
+    <div class="logo">
+      <img src="https://i.pinimg.com/originals/c6/13/1e/c6131e0206d37d4f4146d53c6e3d16f3.jpg" alt="Logo">
+    </div>
+    <div class="menu-icon">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="power.html">Power</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="web.html">Web</a></li>
+      <li><a href="habits.html">Habits</a></li>
+      <li><a href="master.html">Master</a></li>
+    </ul>
+  </nav>
+      <header>
+            <h1>Payment - Unraveling the Secrets of Programming</h1>
+        </header>
+      <section class="item-center">
+        <p>The amount before taxes is: $17.99</p>
+        <p>Taxes: $2.99</p>
+        <p>Final Amount: $20.98</p>
+        <p>Please enter your information below:</p>
+        <div class="container">
+    <form id="paymentForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required><br>
+      
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+      
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+      
+      <button type="button" id="submitBtn">Submit Payment</button>
+    </form>
+    <div id="confirmation" class="hidden">
+      <h2>Thank You!</h2>
+      <div id="submittedData"></div>
+    </div>
+  </div>
+        <div class="item-center">
+        <button id="continue">Continue</button>
+        </div>
+        </section>
+        <footer>
+      <div class="social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>&copy; <strong>Guttman Community College.</strong></p>
+    </footer>
+        <script src="js/script.js"></script>
+        <script src="js/script-master-pay.js"></script>
+    </body>
+</html>

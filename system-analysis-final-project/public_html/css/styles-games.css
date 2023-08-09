@@ -1,0 +1,195 @@
+.navbar {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 150px;
+  height: 50px; /* Adjust the height as per your logo's dimensions */
+}
+
+.menu-icon {
+  display: none; /* Hide the menu icon on larger screens */
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 10px;
+  font-family: impact;
+}
+
+.nav-links li:first-child {
+  margin-left: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: blue;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: green;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h3 {
+    color: white;
+}
+
+
+section1 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+.social {
+  color: white;
+  margin-top: 20px;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+  margin: 10px; /* Add margin to separate the icons from each other */
+}
+
+.social a:hover {
+  color: gray;
+}
+
+footer {
+  background-color: black;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Change to column to center align the content vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social {
+  align-items: center;
+}
+
+footer p {
+  color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-links {
+    margin-top: 10px;
+    display: none; /* Hide the navigation links on mobile */
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon on mobile */
+  }
+
+  /* Show the navigation links when the menu icon is clicked */
+  .nav-active {
+    display: flex;
+  }
+}
